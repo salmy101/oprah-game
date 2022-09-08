@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oprah Likes You. And so do other people.</title>
+
+		<style>
+			
+			/* Basic CSS comment */	
+			body {
+				background: rgb(238, 162, 162);
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+				font-size: 26px;
+			}
+
+		/*	h1 {
+				font-size: 80px;
+				color: #333	;
+			} */
+
+		</style>
+		<script>
+			//alert("hello!")
+			//print to the screen with js document.write
+			//prompt() is a function that takes input and we save as a variable!! powerful
+			const username = prompt()
+			const firstLetter = username[0]
+			const car = ["BMW", "Jeep", "Rolls Royce",]
+		 if(firstLetter.toLocaleLowerCase() === "z" || firstLetter.toLocaleLowerCase() === "q" ) {
+			document.write( '<h1>' + username + `! ummm sorry but what kind of name starts with ${firstLetter}? no gift for you!</h1>`)
+			document.write('<img src="oprah-confuse.jpeg" alt="Oprah" style="width: 400px; height: 350px; margin: 1px;" />');
+			
+		} else if(firstLetter.toLocaleLowerCase().includes("c") || firstLetter.toLocaleLowerCase().includes("e") || firstLetter.toLocaleLowerCase().includes("b") || firstLetter.toLocaleLowerCase().includes("s") ){
+				document.write('<h1>Hello ' + username + ', you won a ' + car[Math.floor(Math.random()*3)] + '!!!</h1>')
+				document.write('<img src="oprah.jpg" alt="Oprah" style="width: 400px; height: 350px; margin: 1px;" />');
+				console.log(username[0])
+
+			}else  {
+				document.write('<h1>Hello ' + username + '! Sorry no gift for you :(</h1>')
+				document.write('<img src="oprah-sad.jpeg" alt="Oprah" style="width: 400px; height: 350px; margin: 1px;" />');
+
+			}
+
+		</script>
+
+
+	</head>
+ 	
+	<body>
+		<!-- <h1>Salma</h1> -->
+		<!-- <img src="oprah-sad.jpeg" alt="Oprah"> -->
+
+    
+	</body>
+
+</html>
